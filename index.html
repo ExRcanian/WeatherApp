@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&family=Raleway&display=swap');</style>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Weathercast</div>
+            <label for="location">Search Location:
+                <input type="text" id="location" name="location" placeholder="Enter City Name">
+            <button id="locationSubmit" onclick="search()">Search</button>
+        </label>
+    </div>
+
+    <div class="main">
+        <div class="today">
+            <div>Today</div>
+            <img src="" id="todayImg">
+            <div id="todayTemp"></div>
+            <div id="todayFeels"></div>
+        </div>
+    </div>
+
+    <div class="forecast">
+        <div id="day1" class="future">
+            <div>Tomorrow</div>
+            <img src="" id="tomorrowImg">
+            <div id="tomorrowTemp"></div>
+            <div id="tomorrowFeels"></div>
+        </div>
+        <div id="day2" class="future">
+            <div id="TwoDayDate"></div>
+            <img src="" id="TwoDayImg">
+            <div id="TwoDayTemp"></div>
+            <div id="TwoDayFeels"></div>
+        </div>
+        <div id="day3" class="future">
+            <div id="ThreeDayDate"></div>
+            <img src="" id="ThreeDayImg">
+            <div id="ThreeDayTemp"></div>
+            <div id="ThreeDayFeels"></div>
+        </div>
+    </div>
+
+    <div class="footer">The Odin Project</div>
+
+<script src="script.js"></script>    
+</body>
+</html>

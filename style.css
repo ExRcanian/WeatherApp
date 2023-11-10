@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 4fr 3fr 0.5fr;
+    background-image: url('./images/sunny.png');
+    background-size: cover;
+    color: white;
+}
+
+.header, .main, .forecast, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header, .today, .forecast, .footer {
+    background-color: #111827;
+}
+
+.header {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    border-radius: 0px 0px 2rem 2rem;
+    flex-direction: column;
+    
+}
+
+label {
+    font-size: 1rem;
+}
+
+#location {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+}
+
+.today {
+    height: 80%;
+    width: 20%;
+    min-width: 200px;
+    min-height: 275px;
+    max-width: 320px;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+.today img, .forecast img {
+    width: 6rem;
+}
+
+.forecast {
+    border-radius: 2rem;
+    margin: 0rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.future {
+    background-color: #252c3a;
+    height: 80%;
+    width: 20%;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+.footer {
+    font-weight: bold;
+}
+
